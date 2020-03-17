@@ -14,6 +14,14 @@
     margin-bottom: 20px;
 
   }
+ .massage{
+    text-align: center;
+    color: #f3af4a;
+    font-family: "Alfa Slab One";
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+ }
 .cover{
      height: 800px;
   }
@@ -31,13 +39,39 @@
     .qbody h1 {
         font-family: "Alfa Slab One";
         background-color: #f3af4a;
+        border: 1px solid rgb(8, 8, 8);
         font-size: 40px;
         text-align: center;
         color: #000000;
         padding: 10px 0px 10px;
         border-radius: 20px;
         }
- #bt0, #bt1, #bt2, #bt3 {
+
+        .qbody #question {
+            font-family:"Verdana";
+            font-size: 25px;
+            color:  #000000;;
+            }
+            
+         
+  #btnstart{
+    background-color: #f3af4a;
+    width: 400px;
+    font-size: 20px;
+    color:  #000000;
+    border: 1px solid rgb(8, 8, 8);
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    font-family:"Alfa Slab One";
+    margin: 0 auto;
+    display: block;
+    }
+    #btnstart:hover{
+        cursor: pointer;
+        background-color: #e9e4da;
+    }
+ #btn0, #btn1, #btn2, #btn3{
     background-color: #f3af4a;
     width: 250px;
     font-size: 20px;
@@ -47,5 +81,23 @@
     margin: 10px 40px 10px 0px;
     padding: 10px 10px;
     text-align: center;
+    font-family:"Alfa Slab One";
     }
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover{
+     cursor: pointer;
+     background-color: #e9e4da; 
+    }
+ .scoresty{
+    font-family: "Alfa Slab One";
+   
+    border: 1px solid rgb(8, 8, 8);
+    font-size: 15px;
+    text-align: center;
+    color: #000000;
+    margin-top: 10px;
+    padding: 3px 0px 2px;
+    border-radius: 10px;
+    }
+
         
