@@ -14,7 +14,7 @@
     margin-bottom: 20px;
 
   }
-  .cover{
+.cover{
      height: 800px;
   }
 .qbody {
@@ -35,6 +35,17 @@
         text-align: center;
         color: #000000;
         padding: 10px 0px 10px;
-        border-radius: 10px;
+        border-radius: 20px;
         }
+ #bt0, #bt1, #bt2, #bt3 {
+    background-color: #f3af4a;
+    width: 250px;
+    font-size: 20px;
+    color:  #000000;
+    border: 1px solid rgb(8, 8, 8);
+    border-radius: 10px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+    text-align: center;
+    }
         
