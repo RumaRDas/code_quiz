@@ -7,8 +7,7 @@
     <!--To use jquery from Google -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--To use jquery  downloaded-->
-    <script src ="script.js" ></script>
-    <script src="jquery.js"></script>
+
     <!--google Font-->
     <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
     <!-- Bootstrap CSS -->
@@ -35,11 +34,10 @@
             <hr style="margin-bottom: 20px">
             
             <div id="beginmsg " class="massage"><h3>Click Begin to start</h3></div><br />
-            
-            <div class="choice">
-            <p id="question"> </p>
             <div id="start" class ="startstyle">
-            <button id="btnstart" >Begin</button> </div>
+              <button id="btnstart" >Begin</button> </div>
+            <div id="choice" style="display: none;">
+            <p id="question"> </p>
             <button id="btn0"> <span id="choice0"> </span> </button>
             <button id="btn1"> <span id="choice1"> </span> </button>
             <button id="btn2"> <span id="choice2"> </span> </button>
@@ -49,10 +47,10 @@
            
             </div>
             
-            <footer id="quizescore" class="scoresty">
+            <div id="quizescore" class="scoresty" >
             <p> Score : <text id="score">0</text></p>
             <p> Question : <text id="questno" >0</text></p>
-            </footer>
+            </div>
             
             </div>
           </div>
@@ -61,6 +59,8 @@
      
 
     <!-- Optional JavaScript -->
+    <script src ="./script.js" ></script>
+    <script src="jquery.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
