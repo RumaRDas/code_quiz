@@ -1,0 +1,40 @@
+.bg{
+    background: #808080; 
+    background: -webkit-linear-gradient(to right, #808080, #3fada8); 
+    background: linear-gradient(to right, #808080, #3fada8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.header{
+    text-align: center;
+    color: #fff;
+    font-family: "Alfa Slab One";
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  .cover{
+     height: 800px;
+  }
+.qbody {
+    width: 700px;
+    height: 500px;
+    margin-top: 30px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 10px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 5px 2px 5px #474141;
+    }
+    .qbody h1 {
+        font-family: "Alfa Slab One";
+        background-color: #f3af4a;
+        font-size: 40px;
+        text-align: center;
+        color: #000000;
+        padding: 10px 0px 10px;
+        border-radius: 10px;
+        }
+        
