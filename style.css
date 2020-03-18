@@ -38,7 +38,7 @@ z
 .qbody {
  width: 700px;
  height: 600px;
- margin-top: 30px;
+
  margin: 0 auto;
  background-color: #fff;
  padding: 10px 10px 10px 10px;
@@ -95,7 +95,7 @@ z
  }
  .btn {
   position: relative;
-  top: 300px;
+  top: 320px;
   background-color: #3fada8;
   width: 150px;
   color:  #000000;
