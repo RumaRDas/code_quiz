@@ -36,7 +36,7 @@ z
   float: left;
 }
 .qbody {
- width: 700px;
+ width: 70%;
  height: 600px;
 
  margin: 0 auto;
@@ -59,7 +59,7 @@ z
 
       .btnstyle{
           background-color: #3fada8;
-          width: 400px;
+          width: 70%;
           font-size: 20px;
           color:  #000000;
           border: 1px solid rgb(8, 8, 8);
