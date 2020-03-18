@@ -31,11 +31,11 @@
 
 ## Pages  view
 ## Desktop View
-![Test Image 1](../assets/images/desktop.png)
+![Test Image 1](./assets/desktop.png)
 ## Ipad View
-![Test Image 2](../assets/images/ipad.png)
+![Test Image 2](./assets/ipad.png)
 ## Iphone View
-![Test Image 2](../assets/images/iphone.png)
+![Test Image 2](./assets/iphone.png)
 ## Font Decoration 
 
 For font decoration uses I used google font 
