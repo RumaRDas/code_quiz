@@ -14,6 +14,7 @@
   width: 100%;
   margin-top: 0px;
   padding-top: 0px;
+ 
 }
 .massage{
   text-align: center;
@@ -40,7 +41,7 @@ z
  margin-top: 30px;
  margin: 0 auto;
  background-color: #fff;
- padding: 10px 50px 50px 50px;
+ padding: 10px 10px 10px 10px;
  border-radius: 10px;
  border: 2px solid #cbcbcb;
  box-shadow: 5px 2px 5px #474141;

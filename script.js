@@ -3,7 +3,7 @@ $(document).ready(function(){
       $(this).hide();
   });
   var questions = [{question: "1.jQuery is a ?",
-             answers: ["JavaScrip-tLibrary", "JavaScript-Language", "JavaScript-Method", "PHP-Method"],
+             answers: ["JavaScript-Library", "JavaScript-Language", "JavaScript-Method", "PHP-Method"],
              correctAnswer: 0
                  },
             {   question: "2. Which jQuery method is used to hide selected elements?",
@@ -29,8 +29,22 @@ $(document).ready(function(){
 
 
 
-//var timer = null;
+var timerInterval;
 
+function startTimer(){
+    var timeLeft = 20
+    timerInterval = setInterval(function(){
+        $("#timer").html(timeLeft);
+        timeLeft--;
+        if(timeLeft === 0){
+          clearInterval(timerInterval);
+          $("#timer").html("Done");
+          $('#start').show();
+          $('#quiz').hide();
+          
+        }
+      },1000);
+}
 
   //ok
   $('#btnstart').click(function(e){
@@ -38,7 +52,8 @@ $(document).ready(function(){
     $('#btnstart').hide();
     $('.massage').hide();
     $('#time').show();
-    $('#scoreitem').hide();
+    $("h4#score").hide();
+    startTimer();
    questionCounter = 0;
     selections = [];
     showQuestion();
@@ -49,7 +64,7 @@ $(document).ready(function(){
     choose();
     questionCounter++;
     showQuestion();
-    $('#score').hide();
+    $("h4#score").hide();
   });
 
   $('#prev').click(function(e){
@@ -57,18 +72,22 @@ $(document).ready(function(){
     choose();
     questionCounter--;
     showQuestion();
-    $('#score').hide();
+    $("h4#score").hide();
   });
 
   $('#start').click(function(e){
     e.preventDefault();
     questionCounter = 0;
+    startTimer();
     selections = [];
     showQuestion();
     $('#start').hide(); 
-    $('#score').hide();
-    
+  // $("h4#score").hide();
   });
+
+  $("#start").on("click", function(){
+  $("h4#score").hide()
+})
 
 function createQuestionElement(index){
   let questionElement = $("<div>", {
@@ -94,10 +113,13 @@ function createRadios(index){
   }
 return form;
 }
+;
+
 $('.optbtn').click(function(e){
   e.preventDefault();
   $(this).css({"backgroundColor" : "blue"});
 });
+
 
 function choose(){
   selections[questionCounter] = +$('input[name="answer"]:checked').val();
@@ -113,34 +135,22 @@ function showQuestion(){
       }else if(questionCounter === 0){
         $('#prev').hide();
         $('#next').show();
-        $('#score').hide();
+        $("h4#score").hide();
       }
     }else{
+      clearInterval(timerInterval);
       let scoreElement = displayScore();
       quiz.append(scoreElement).fadeIn();
       $('#next').hide();
       $('#prev').hide();
       $('#start').show();
-      $('#score').hide();
-     
+      $('#score').show();
     }
   });
 }
-var count =20
-var interval = setInterval(function(){
-    $("#timer").html(count);
-    count--;
-    if(count === 0){
-      clearInterval(interval);
-      $("#timer").html("Done");
-      $('#start').show();
-      $('#quiz').hide();
-      
-    }
-  },1000);
 
 function displayScore(){
-let score = $('<h4>',{id:'#score'});
+let score = $('<h4>',{id:'score'});
 let numCorrect = 0;
 for(let i=0; i< selections.length; i++){
   if(selections[i]=== questions[i].correctAnswer){
