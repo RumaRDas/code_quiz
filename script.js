@@ -65,6 +65,7 @@ function startTimer(){
     questionCounter++;
     showQuestion();
     $("h4#score").hide();
+    $('#btnstart').hide();
   });
 
   $('#prev').click(function(e){
@@ -73,6 +74,7 @@ function startTimer(){
     questionCounter--;
     showQuestion();
     $("h4#score").hide();
+    $('#btnstart').hide();
   });
 
   $('#start').click(function(e){
@@ -81,7 +83,8 @@ function startTimer(){
     startTimer();
     selections = [];
     showQuestion();
-    $('#start').hide(); 
+    $('#start').hide();
+    $('#btnstart').hide(); 
   // $("h4#score").hide();
   });
 
@@ -136,6 +139,7 @@ function showQuestion(){
         $('#prev').hide();
         $('#next').show();
         $("h4#score").hide();
+        $('#btnstart').hide();
       }
     }else{
       clearInterval(timerInterval);
@@ -145,6 +149,7 @@ function showQuestion(){
       $('#prev').hide();
       $('#start').show();
       $('#score').show();
+      $('#btnstart').hide();
     }
   });
 }
