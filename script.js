@@ -31,20 +31,7 @@ $(document).ready(function(){
 
 var timerInterval;
 
-function startTimer(){
-    var timeLeft = 20
-    timerInterval = setInterval(function(){
-        $("#timer").html(timeLeft);
-        timeLeft--;
-        if(timeLeft === 0){
-          clearInterval(timerInterval);
-          $("#timer").html("Done");
-          $('#start').show();
-          $('#quiz').hide();
-          
-        }
-      },1000);
-}
+
 
   //ok
   $('#btnstart').click(function(e){
@@ -58,6 +45,22 @@ function startTimer(){
     selections = [];
     showQuestion();
           });  
+
+          
+          function startTimer(){
+            var timeLeft = 20
+            timerInterval = setInterval(function(){
+                $("#timer").html(timeLeft);
+                timeLeft--;
+                if(timeLeft === 0){
+                  clearInterval(timerInterval);
+                  $("#timer").html("Done");
+                  $('#start').show();
+                  $('#quiz').hide();
+                  
+                }
+              },1000);
+        }
 
   $('#next').click(function(e){
     e.preventDefault();
