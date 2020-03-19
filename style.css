@@ -36,15 +36,15 @@ z
   float: left;
 }
 .qbody {
- width: 70%;
- height: 600px;
-
+ width: 90%;
+ height: 630px;
  margin: 0 auto;
  background-color: #fff;
  padding: 10px 10px 10px 10px;
  border-radius: 10px;
  border: 2px solid #cbcbcb;
  box-shadow: 5px 2px 5px #474141;
+ justify-content: center;
  } 
  .qbody h1 {
      font-family: "Alfa Slab One";
@@ -59,7 +59,7 @@ z
 
       .btnstyle{
           background-color: #3fada8;
-          width: 70%;
+          width: 80%;
           font-size: 20px;
           color:  #000000;
           border: 1px solid rgb(8, 8, 8);
@@ -95,9 +95,9 @@ z
  }
  .btn {
   position: relative;
-  top: 320px;
+  top: 370px;
   background-color: #3fada8;
-  width: 150px;
+  width: 25%;
   color:  #000000;
   border: 1px solid rgb(8, 8, 8);
   border-radius: 10px;
@@ -114,7 +114,7 @@ z
     background-color: #3fada8;
     padding: 2px;
     padding-left: 20px;
-    width: 350px;
+    width: 80%;
     color:  #000000;
     border: 1px solid rgb(8, 8, 8);
     border-radius: 10px;
@@ -150,7 +150,7 @@ z
     
       }
 #start{
-margin-left: 80px;
+margin-left: 30px;
 justify-content: center;
 }  
 .cover{
