@@ -1,7 +1,5 @@
 $(document).ready(function(){
-  $('#time').load("index.html", function() {
-      $(this).hide();
-  });
+
   var questions = [{question: "1.jQuery is a ?",
              answers: ["JavaScript-Library", "JavaScript-Language", "JavaScript-Method", "PHP-Method"],
              correctAnswer: 0
